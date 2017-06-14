@@ -18,21 +18,21 @@
   <table id="applist">
     <tr>
       <td><b><i><a href="{% url 'bookmark:index' %}">Bookmark</a></i></b></td>
-      <td>You can write your own post and share to others. Donec id elit non miporta</td>
-      <td class="Edit"><i><a href="#">Add</a></i></td>
-      <td class="Edit"><i><a href="#">Change</a></i></td>
+      <td>개인 북마크를 저장하거나 개인의 북마크를 수정 및 삭제가 가능합니다.</td>
+      <td class="Edit"><i><a href="{% url 'bookmark:add' %}">Add</a></i></td>
+      <td class="Edit"><i><a href="{% url 'bookmark:change' %}">Change</a></i></td>
     </tr>
 
     <tr>
       <td><b><i><a href="{% url 'blog:index' %}">Blog</a></i></b></td>
-      <td>You can write your own post and share to others. Donec id elit non miporta</td>
-      <td class="Edit"><i><a href="#">Add</a></i></td>
-      <td class="Edit"><i><a href="#">Change</a></i></td>
+      <td>개인 블로그</td>
+      <td class="Edit"><i><a href="{% url 'blog:add' %}">Add</a></i></td>
+      <td class="Edit"><i><a href="{% url 'blog:change' %}">Change</a></i></td>
     </tr>
 
     <tr>
-      <td><b><i><a href="#">Photo</a></i></b></td>
-      <td>You can write your own post and share to others. Donec id elit non miporta</td>
+      <td><b><i><a href="{% url 'photo:index' %}">Photo</a></i></b></td>
+      <td>당신 개인의 사진을 올릴 수 있으며 앨범을 삭제시 안에 있는 포토는 다 삭제됩니다.</td>
       <td class="Edit"><i><a href="#">Add</a></i></td>
       <td class="Edit"><i><a href="#">Change</a></i></td>
     </tr>
